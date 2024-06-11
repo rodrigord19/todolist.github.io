@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+.container {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput, #taskTime {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#taskTime {
+    max-width: 120px;
+}
+
+#addTaskBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+#addTaskBtn:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+li input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+li .editBtn, li .deleteBtn {
+    margin-left: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+li .editBtn::before {
+    content: '\270E';
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+li .deleteBtn::before {
+    content: '\2716';
+    font-size: 1.2em;
+    color: #dc3545;
+}
+
+li .editBtn:hover::before {
+    color: #0056b3;
+}
+
+li .deleteBtn:hover::before {
+    color: #c82333;
+}
+
+.time-display {
+    margin-left: 10px;
+    color: #555;
+    font-size: 0.9em;
+}
